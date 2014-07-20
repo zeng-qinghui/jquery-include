@@ -6,7 +6,18 @@
  * Licensed under the MIT license.
  */
 
-(function($) {
+(function (factory) {
+    if (typeof define === 'function' && define.amd) {
+        // AMD
+        define(['jquery'], factory);
+    } else if (typeof exports === 'object') {
+        // CommonJS
+        factory(require('jquery'));
+    } else {
+        // Browser globals
+        factory(jQuery);
+    }
+}(function($) {
   var makePathName = function(base,path){
       base = arguments[0]?arguments[0]:location.pathname;
       path = arguments[1]?arguments[1]:'';
@@ -48,4 +59,4 @@
   };
 
 
-}(jQuery));
+}));
