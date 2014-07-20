@@ -2,7 +2,7 @@
   "name": "include",
   "title": "jQuery Include",
   "description": "A simple, lightweight jQuery plugin for include html.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/zengohm/jquery-include",
   "docs": "https://github.com/zengohm/jquery-include#readme",
   "author": {
