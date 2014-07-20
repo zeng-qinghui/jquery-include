@@ -5,8 +5,8 @@ A simple, lightweight jQuery plugin for include html.
 ## Getting Started
 Download the [production version][min] or the [development version][max].
 
-[min]: https://raw.github.com/zengohm/jquery-include/master/dist/include.min.js
-[max]: https://raw.github.com/zengohm/jquery-include/master/dist/include.js
+[min]: https://raw.github.com/zengohm/jquery-include/master/dist/jquery.include.min.js
+[max]: https://raw.github.com/zengohm/jquery-include/master/dist/jquery.include.js
 
 In your web page:
 
