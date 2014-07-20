@@ -1,6 +1,6 @@
 # Include
 
-The best jQuery plugin ever.
+A simple, lightweight jQuery plugin for include html.
 
 ## Getting Started
 Download the [production version][min] or the [development version][max].
