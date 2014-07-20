@@ -2,12 +2,31 @@
 * https://github.com/zengohm/jquery-include
 * Copyright (c) 2014 zengohm; Licensed MIT */
 (function($) {
-
+  var makePathName = function(base,path){
+      base = arguments[0]?arguments[0]:location.pathname;
+      path = arguments[1]?arguments[1]:'';
+      if(path[0]==='/' || path.match(/^\w+\:\/\//)){
+          return path;
+      }else {
+          return base.substr(0, base.lastIndexOf('/')) + '/' + path;
+      }
+  };
   // Collection method.
   $.fn.include = function() {
-    return this.each(function(i) {
+    return this.each(function() {
       // Do something awesome to each selected element.
-      $(this).html('awesome' + i);
+      $(this).find('[jq-include]').not('[jq-include-ignore]').each(function(){
+        var obj = $(this);
+        var parentFrom = obj.parents('[jq-include]:first').attr('jq-include-from');
+        if(!parentFrom){
+            parentFrom = makePathName();
+        }
+        var url = makePathName(parentFrom,$(this).attr('jq-include'));
+        obj.attr('jq-include-from',makePathName(url)).attr('jq-include-ignore',true);
+
+        $(this).html($.ajax({'async':false,'method':'get','url':url}).responseText);
+        $(this).include();
+      });
     });
   };
 
@@ -16,18 +35,12 @@
     // Override default options with passed-in options.
     options = $.extend({}, $.include.options, options);
     // Return something awesome.
-    return 'awesome' + options.punctuation;
+    return $('body').include();
   };
 
   // Static method default options.
   $.include.options = {
-    punctuation: '.'
   };
 
-  // Custom selector.
-  $.expr[':'].include = function(elem) {
-    // Is this element awesome?
-    return $(elem).text().indexOf('awesome') !== -1;
-  };
 
 }(jQuery));
