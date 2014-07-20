@@ -1,9 +1,10 @@
 {
   "name": "include",
   "title": "Include",
-  "description": "The best jQuery plugin ever.",
+  "description": "A simple, lightweight jQuery plugin for include html.",
   "version": "0.1.0",
   "homepage": "https://github.com/zengohm/jquery-include",
+  "docs": "https://github.com/zengohm/jquery-include#readme",
   "author": {
     "name": "zengohm",
     "email": "zengohm@gmail.com"
@@ -22,5 +23,5 @@
   "dependencies": {
     "jquery": ">=1.2"
   },
-  "keywords": []
+  "keywords": ["include"]
 }
