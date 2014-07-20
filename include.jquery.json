@@ -1,0 +1,26 @@
+{
+  "name": "include",
+  "title": "Include",
+  "description": "The best jQuery plugin ever.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/zengohm/jquery-include",
+  "author": {
+    "name": "zengohm",
+    "email": "zengohm@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zengohm/jquery-include.git"
+  },
+  "bugs": "https://github.com/zengohm/jquery-include/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/zengohm/jquery-include/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": ">=1.2"
+  },
+  "keywords": []
+}
