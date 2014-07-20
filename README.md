@@ -1,4 +1,4 @@
-# jQuery.include  {<img src="https://travis-ci.org/zengohm/jquery-include.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/zengohm/jquery-include]
+# jQuery.include  [![Build Status](https://travis-ci.org/zengohm/jquery-include.svg?branch=master)](https://travis-ci.org/zengohm/jquery-include)
 
 A simple, lightweight jQuery plugin for include html.
 
