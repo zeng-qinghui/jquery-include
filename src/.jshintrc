@@ -12,8 +12,6 @@
   "eqnull": true,
   "browser": true,
   "jquery": true,
-  "globals": {
-    "define": true,
-    "require": true
-  }
+  "define": true,
+  "require": true
 }
