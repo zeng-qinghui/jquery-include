@@ -45,12 +45,8 @@
         });
     };
 
-    $.include = function (options) {
-        options = $.extend({}, $.include.options, options);
+    $.include = function () {
         return $('body').include();
-    };
-
-    $.include.options = {
     };
 
 }));

@@ -10,8 +10,5 @@
     "unused": true,
     "boss": true,
     "eqnull": true,
-    "browser": true,
-    "jquery": true,
-    "define": true,
-    "require": true
+    "node": true
 }

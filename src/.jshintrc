@@ -12,6 +12,9 @@
   "eqnull": true,
   "browser": true,
   "jquery": true,
-  "define": true,
-  "require": true
+  "globals": {
+      "define": true,
+      "require": true
+  },
+  "extends": "../.jshintrc"
 }

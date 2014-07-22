@@ -1,4 +1,4 @@
-/*! jQuery Include - v0.1.1 - 2014-07-20
+/*! jQuery Include - v0.1.1 - 2014-07-23
 * https://github.com/zengohm/jquery-include
 * Copyright (c) 2014 Zeng Ohm; Licensed MIT */
 (function (factory) {
@@ -40,12 +40,8 @@
         });
     };
 
-    $.include = function (options) {
-        options = $.extend({}, $.include.options, options);
+    $.include = function () {
         return $('body').include();
-    };
-
-    $.include.options = {
     };
 
 }));
