@@ -1,14 +1,11 @@
 {
     "curly": true,
     "eqeqeq": true,
-    "immed": true,
-    "latedef": true,
+    "expr": true,
     "newcap": true,
     "noarg": true,
-    "sub": true,
+    "nonbsp": true,
+    "trailing": true,
     "undef": true,
-    "unused": true,
-    "boss": true,
-    "eqnull": true,
-    "node": true
+    "unused": true
 }

@@ -1,3 +1,4 @@
+/*jshint node:true, quotmark:single */
 'use strict';
 
 module.exports = function(grunt) {
